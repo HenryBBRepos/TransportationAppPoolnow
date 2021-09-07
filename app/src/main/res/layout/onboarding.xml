@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7594d"
+    tools:context=".Onboarding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/onboarding_one"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:lineHeight="25dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your movement and travels intuitively and seamlessly"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:lineHeight="40dp"
+            android:layout_marginBottom="30dp"
+            android:textFontWeight="100"
+            android:textSize="23dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="80dp"
+            android:background="@drawable/background_create_btn"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            android:text="Sign in with Google"
+            android:textColor="#f7594d"
+            android:onClick="ToSignIn"
+            android:drawableLeft="@drawable/google"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:elevation="2dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_create"
+            android:layout_marginBottom="55dp"
+            android:textSize="20dp"
+            android:text="Create account"
+            android:textColor="#ffffff"
+            android:textAllCaps="false" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:text="Already have an account?"
+                android:textAllCaps="false"
+                android:textColor="#E9E9E9"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
